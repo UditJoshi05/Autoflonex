@@ -1,6 +1,6 @@
 import { useMemo, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Line, Sphere, Trail, Float } from '@react-three/drei'
+import { Line, Float } from '@react-three/drei'
 import * as THREE from 'three'
 
 function NodeConnection({ start, end }: { start: [number, number, number], end: [number, number, number] }) {
