@@ -16,7 +16,7 @@ function NodeConnection({ start, end }: { start: [number, number, number], end: 
 }
 
 function DataPacket({ path }: { path: [number, number, number][] }) {
-    const ref = useRef<any>()
+    const ref = useRef<any>(null)
     const speed = 0.5 + Math.random() * 0.5
     const offset = Math.random() * 100
 
@@ -40,7 +40,7 @@ function DataPacket({ path }: { path: [number, number, number][] }) {
 }
 
 function WorkflowNetwork() {
-    const group = useRef<any>()
+    const group = useRef<any>(null)
 
     // Create a structured "Workflow" layout
     const nodes = useMemo(() => {
